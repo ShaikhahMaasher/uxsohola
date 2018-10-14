@@ -1,0 +1,38 @@
+
+/* arabic */
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Helvetica'), 
+    local('Helvetica-Regular'), 
+    url(/fonts/Helvetica-neue-reg.woff2) format('woff2'),
+    url(/fonts/Helvetica-neue-reg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Helvetica'), 
+    local('Helvetica-B1old'), 
+    url(/fonts/Helvetica-neue-bold.woff2) format('woff2'),
+    url(/fonts/Helvetica-neue-bold.ttf) format('truetype');
+}
+
+/* latin */
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Helvetica-neue-reg.woff2) format('woff2'),
+    url(/fonts/Helvetica-neue-reg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: bold;
+    src: url(/fonts/Helvetica-neue-bold.woff2) format('woff2'),
+    url(/fonts/Helvetica-neue-bold.ttf) format('truetype');
+}

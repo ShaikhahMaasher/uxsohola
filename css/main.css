@@ -1,0 +1,51 @@
+body, body * {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    color: #3f4450;
+}
+
+.page-wrapper, .main-nav {
+    padding: 0 5%;
+}
+
+header {
+    padding-top: 5%;
+}
+
+.main-nav, .nav-menu, .nav-brand a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav, .is-fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+    background-color: white;
+}
+
+.nav-item:not(:last-child) {
+    padding-right: 38px; 
+    padding-left: 0; 
+    display: block;
+}
+
+html[dir=rtl] .nav-item:not(:last-child) {
+    padding-left: 38px;
+    padding-right: 0; 
+}
+
+.nav-menu a {
+    color: #2880e5;
+}
+
+.subtitle {
+    color: #969696;
+}
+
+.columns {
+    margin: 0 auto;
+}
