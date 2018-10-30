@@ -1,18 +1,22 @@
-@import 'reset';
-@import 'imports/constants';
-@import 'imports/responsive';
-@import 'imports/mixins';
+// @import 'reset';
+// @import 'imports/constants';
+// @import 'imports/responsive';
+// @import 'imports/mixins';
+
+@import '0-plugins/_plugins-dir.sass';
+@import '1-base/_base-dir.sass';
+@import '2-styles/_styles-dir.sass';
 
 body,
 body * {
     font-size: inherit;
     font-weight: inherit;
     font-style: inherit;
-    color: $base;
+    color: $gray-main;
 }
 
 body {
-    background-color: $bg;
+    background-color: $off-white;
 }
 
 html[dir=rtl] {
@@ -66,7 +70,7 @@ html[dir=rtl] {
     }
 
     a {
-        color: $primary;
+        color: $blue;
     }
 }
 
@@ -85,14 +89,14 @@ html[dir=rtl] {
 
 .title {
     color: inherit;
-    font-size: 2rem;
+    font-size: calc(24px + (44-24) * ((100vw - 300px) / (1600 - 300))); // calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
     font-weight: bold;
     line-height: 1.125;
 }
 
 .subtitle {
-    color: $grey-text;
-    font-size: 1rem;
+    color: $gray-base;
+    font-size: calc(12px + (20-12) * ((100vw - 300px) / (1600 - 300)));
     font-weight: normal;
     line-height: normal;
     padding-top: 15px;
@@ -172,7 +176,7 @@ html[dir=rtl] {
 
         .card-body {
             .desc {
-                color: $grey-text;
+                color: $gray-base;
                 font-size: 12px;
             }
 
